@@ -5,6 +5,7 @@ import { MdOutlineCollections } from "react-icons/md";
 import { useDispatch, useSelector } from "react-redux";
 import Image from "next/image";
 import { getPixabayApi } from "../../redux/slice/PixabaySlice";
+import Link from "next/link";
 
 const Grid = () => {
   const [likesCount, setLikesCount] = useState(0);
@@ -18,6 +19,12 @@ const Grid = () => {
   useEffect(() => {
     dispatch(getPixabayApi());
   }, []);
+
+  // const openInNewTab = (url: any) => {
+  //   // 👇️ setting target to _blank with window.open
+  //   window.open(url, "_blank", "noopener,noreferrer");
+  // };
+
   return (
     <div className="container">
       <div className="loop_wrapper">
@@ -49,11 +56,14 @@ const Grid = () => {
                   </div>
                   <div className="number">{item?.comments}</div>
                 </div>
+
                 <a
                   className="collection right"
                   href={item?.largeImageURL}
                   download={true}
-                  target="_blank"
+                  // target="_blank"
+                  // rel="noopener noreferrer"
+                  // onClick={() => openInNewTab(item?.largeImageURL)}
                 >
                   <MdOutlineCollections />
                 </a>
