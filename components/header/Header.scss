@@ -1,0 +1,55 @@
+.header_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  .header_left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    .link {
+      margin-left: 40px;
+    }
+    .logo_container {
+      position: relative;
+      width: 100px;
+      height: 20px;
+    }
+  }
+  .header_right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .link {
+      margin-left: 40px;
+    }
+    .icon {
+      font-size: 20px;
+    }
+    .dropdown {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .upload {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #01b468;
+      padding: 8px 25px;
+      border-radius: 20px;
+      .icon {
+        color: #fff;
+      }
+      .upload_btn {
+        border: none;
+        background: transparent;
+        color: #fff;
+        margin-left: 5px;
+      }
+    }
+  }
+}

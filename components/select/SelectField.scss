@@ -1,0 +1,20 @@
+.selectField_wrapper {
+  display: flex;
+  background-color: #fff;
+  padding: 12px;
+  border-radius: 5px;
+  .search_icon {
+    margin-top: 5px;
+    font-size: 25px;
+    color: black;
+  }
+  .searchInput {
+    margin-top: 5px;
+    margin-left: 10px;
+    width: 80%;
+  }
+  .select_container {
+    // width: 100%;
+    color: black;
+  }
+}
